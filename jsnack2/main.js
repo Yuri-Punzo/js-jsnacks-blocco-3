@@ -6,10 +6,18 @@ const stringsArray = ["pippo", "PLUTO", "PaPerIno"]
 console.log(stringsArray);
 
 
-const newArray = stringsArray.map(myFunction)
+const newArray = stringsArray.map(toLowerCaseFunction)
 
-function myFunction(element) {
+function toLowerCaseFunction(element) {
      return element.toLowerCase()
 }
 
-console.log(newArray);
+//console.log(newArray);
+
+const finalArray = stringsArray.map(firstLetterUppercase)
+
+function firstLetterUppercase(element) {
+    return element.charAt[0].toUpperCase()
+}
+
+console.log(finalArray);
