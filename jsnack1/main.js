@@ -59,8 +59,14 @@ const carsArray = [
 
 
 
-const benzina = carsArray.filter(checkAlimentazione);
+const benzina = carsArray.filter(carsArray => carsArray.alimentazione == "Benzina")
 
-function checkAlimentazione() {
-    return alimentazione == "benzina"
-}
+console.log(benzina);
+
+const diesel = carsArray.filter(carsArray => carsArray.alimentazione == "Diesel")
+
+console.log(diesel);
+
+const others = carsArray.filter(carsArray => carsArray.alimentazione !== "Diesel" && carsArray.alimentazione !== "Benzina")
+
+console.log(others);
