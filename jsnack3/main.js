@@ -27,4 +27,7 @@ const zooAnimals = [
     },
 ]
 
+const mammiferi = zooAnimals.filter(zooAnimals => zooAnimals.classe == "mammiferi")
+
+console.log(mammiferi);
 
